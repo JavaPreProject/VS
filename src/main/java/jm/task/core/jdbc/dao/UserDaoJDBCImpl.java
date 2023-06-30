@@ -26,6 +26,8 @@ public class UserDaoJDBCImpl implements UserDao {
             );
         } catch (SQLException e) {
             System.err.println(e.getErrorCode());
+            System.out.println("");
+            
         }
     }
 

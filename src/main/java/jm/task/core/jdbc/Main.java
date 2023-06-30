@@ -18,7 +18,7 @@ public class Main {
         System.out.println("\nрезультат работы метода \" toString \" класса User:");
         System.out.println(userServiceJDBC.getAllUsers().toString());
         userServiceJDBC.cleanUsersTable();
-        //userServiceJDBC.dropUsersTable();
+        userServiceJDBC.dropUsersTable();
 
         Util.closeConnectionJDBC();
 

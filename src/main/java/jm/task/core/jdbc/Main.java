@@ -8,7 +8,7 @@ import jm.task.core.jdbc.util.Util;
 public class Main {
     public static void main(String[] args) {
          //реализуйте алгоритм здесь
-        UserService userServiceJDBC = new UserServiceImpl();
+       /*  UserService userServiceJDBC = new UserServiceImpl();
         userServiceJDBC.createUsersTable();
         userServiceJDBC.saveUser("Ivan","Ivanov",(byte) 18);
         userServiceJDBC.saveUser("Peter","Petrov",(byte) 21);
@@ -21,11 +21,12 @@ public class Main {
         userServiceJDBC.dropUsersTable();
 
         Util.closeConnectionJDBC();
+        */
 
-        //UserService userServiceHibernate = new UserServiceImpl();
-        //userServiceHibernate.createUsersTable();
-        //userServiceHibernate.saveUser("Ivan","Ivanov",(byte) 18);
-        //userServiceHibernate.dropUsersTable();
+        UserService userServiceHibernate = new UserServiceImpl();
+        userServiceHibernate.createUsersTable();
+        userServiceHibernate.saveUser("Ivan","Ivanov",(byte) 18);
+        userServiceHibernate.dropUsersTable();
 
        // Util.closeSessionFactoryHibernate();
 
